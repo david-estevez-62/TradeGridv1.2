@@ -38,7 +38,8 @@
   top: 0;
   left: 0;
   height: 3px;
-  background: #009ae1;
+  background: #5E5D5E;
+  /*background: #333333;*/
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;
@@ -79,7 +80,7 @@
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: #009ae1;
+  color: #3AE200;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 25px;
@@ -105,7 +106,7 @@
   transition: border-color 0.2s ease;
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #009ae1;
+  border-color: #3AE200;
 }
 #cssmenu ul ul {
   position: absolute;
@@ -142,6 +143,7 @@
   font-size: 12px;
   background: #333333;
   text-decoration: none;
+  opacity: 0.8;
   color: #dddddd;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;

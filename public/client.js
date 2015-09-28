@@ -6,6 +6,8 @@ $(function(){
 // 	// console.log("Selected: " + tabs.selected);
 // });
 
+$( ".body1" ).draggable();
+$( ".body2" ).draggable();
 
 
 var Status = 'open';
