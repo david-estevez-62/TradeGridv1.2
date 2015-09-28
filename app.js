@@ -1,18 +1,17 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var shortid= require('shortid');
 var http = require('http')
 var util = require('util');
-var account = { 'username': 'e.hruska85@yahoo.com'};
 
 var config = require('./controllers/config.js')
 var indexController = require('./controllers/index.js');
-var patientsController = require('./controllers/patients');
+// var patientsController = require('./controllers/patients');
 
-var Patient = require('./models/patients')
+// var Patient = require('./models/patients')
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/patientlog')
+// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/patientlog')
 
 
 
@@ -24,72 +23,72 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use("/bower_components", express.static(__dirname + '/bower_components'));
 
 app.get('/', indexController.index);
-app.get('/home', function(req,res){
-	res.render('home');
-});
-app.post('/addPatient', function(req,res){
+// app.get('/home', function(req,res){
+// 	res.render('home');
+// });
+// app.post('/addPatient', function(req,res){
 	
-	// Or if name on input is team ==> req.body.team
-	var newPatient = req.body;
+// 	// Or if name on input is team ==> req.body.team
+// 	var newPatient = req.body;
 
-	var patient = new Patient(newPatient);
-	patient.save(function(err, savedPatient){
-		console.log(savedPatient)
-		res.redirect('/');
-	});
+// 	var patient = new Patient(newPatient);
+// 	patient.save(function(err, savedPatient){
+// 		console.log(savedPatient)
+// 		res.redirect('/');
+// 	});
 
-	// team.team.push(newTeam);
+// 	// team.team.push(newTeam);
 
-});
+// });
 
-app.get('/search', function (req, res) {
+// app.get('/search', function (req, res) {
 
-  res.render('search');
+//   res.render('search');
 
-});
-app.post('/search', function (req, res) {
+// });
+// app.post('/search', function (req, res) {
  
-  // User.findOne({'username':username}, function(err, user){
-  		// console.log(req.body.search)
-  		// 
+//   // User.findOne({'username':username}, function(err, user){
+//   		// console.log(req.body.search)
+//   		// 
   		
   
-	  Patient.find({name: new RegExp(req.body.search, 'i')}, function (err, user) {
-		// if (err) return next(err);
+// 	  Patient.find({name: new RegExp(req.body.search, 'i')}, function (err, user) {
+// 		// if (err) return next(err);
 
-  //       // If user is not found...
-  //       if (!user){
-  //         return next(null, false, req.flash('loginError', 'No user found.'));
-  //       }
-  //       console.log(user)
+//   //       // If user is not found...
+//   //       if (!user){
+//   //         return next(null, false, req.flash('loginError', 'No user found.'));
+//   //       }
+//   //       console.log(user)
 
 	    
-  			// res.send(user)
-  			// res.redirect('search')
-	      res.render('search', {userlist: user});
-	    })
+//   			// res.send(user)
+//   			// res.redirect('search')
+// 	      res.render('search', {userlist: user});
+// 	    })
 	   
-	    // res.('/search')
-});
+// 	    // res.('/search')
+// });
 
-// app.post('/addChant', teamsController.AddChant);
-app.post('/addChant', function(req,res){
+// // app.post('/addChant', teamsController.AddChant);
+// app.post('/addChant', function(req,res){
 	
-	// Or if name on input is team ==> req.body.team
-	var newTeam = req.body;
-	console.log(newTeam);
-	console.log(newTeam.team);
+// 	// Or if name on input is team ==> req.body.team
+// 	var newTeam = req.body;
+// 	console.log(newTeam);
+// 	console.log(newTeam.team);
 
 
-	// var team = new Team(newTeam);
-	// team.save(function(err, savedTeam){
-	// 	res.send(savedTeam);
-	// });
+// 	// var team = new Team(newTeam);
+// 	// team.save(function(err, savedTeam){
+// 	// 	res.send(savedTeam);
+// 	// });
 
 
-	// team.team.push(newTeam);
+// 	// team.team.push(newTeam);
 
-});
+// });
 
 ////////////
 //xignity //
