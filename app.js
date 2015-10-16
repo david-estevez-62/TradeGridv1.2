@@ -1,6 +1,5 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// var mongoose = require('mongoose');
 var shortid= require('shortid');
 var http = require('http')
 var util = require('util');
@@ -11,7 +10,6 @@ var indexController = require('./controllers/index.js');
 
 // var Patient = require('./models/patients')
 
-// mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/patientlog')
 
 
 
@@ -149,7 +147,7 @@ app.get('/', indexController.index);
 // 	});
 
 
-
-var server = app.listen(8463, function() {
+var port = process.env.PORT || 8463;
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });

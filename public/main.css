@@ -255,17 +255,9 @@ h2:hover{
 }
 
 
-@media (max-width: 1109px) {
-	label{
-		visibility: hidden;
-	}
-	.btmbar{
-		visibility:hidden;
-	}
-	.btmbarHeader{
-		visibility:hidden;
-	}
-}
+
+
+
 .btn1{
 	position:absolute;
 	top:550px;
@@ -311,22 +303,25 @@ z-index: -1;
 	margin-top: 15px;
 }
 .body1{
-	position: fixed;
+	
 	width:51%;
 	height:23%;
+	position: absolute;
 	top: 100px;
-	left: 400px;
+	left: 25%;
 	/*background-color: #E0E0E0;*/
 	background-color: #989898;
+	cursor: move;
 }
 .body2{
-	position: fixed;
+	position: absolute;
 	width:51%;
 	height:23%;
 	top: 305px;
-	left: 400px;
+	left:25%;
 	/*background-color: #E0E0E0;*/
 	background-color: #989898;
+	cursor: move;
 }
 
 /*.btmbar{
@@ -400,4 +395,320 @@ body{
     }
 }
 
+@media (max-width: 1109px) {
+	label{
+		visibility: hidden;
+	}
+	.btmbar{
+		visibility:hidden;
+	}
+	.btmbarHeader{
+		visibility:hidden;
+	}
+}
+/*@media (max-width: 1330px) {
+	.body1{
+		left:25%;
+	}
+	.body2{
+		left:25%;
+	}
+}*/
+@media (max-width: 1360px) {
+	.body1{
+		left:24%;
+	}
+	.body2{
+		left:24%;
+	}
+}
+@media (max-width: 1340px) {
+	.body1{
+		left:23%;
+	}
+	.body2{
+		left:23%;
+	}
+}
+@media (max-width: 1320px) {
+	.body1{
+		left:22.25%;
+	}
+	.body2{
+		left:22.25%;
+	}
+}
+@media (max-width: 1300px) {
+	.body1{
+		left:21.6%;
+	}
+	.body2{
+		left:21.6%;
+	}
+}
+@media (max-width: 1280px) {
+	.body1{
+		left:20.7%;
+	}
+	.body2{
+		left:20.7%;
+	}
+}
+@media (max-width: 1250px) {
+	.body1{
+		left:20.1%;
+	}
+	.body2{
+		left:20.1%;
+	}
+}
+@media (max-width: 1220px) {
+	.body1{
+		left:19.4%;
+	}
+	.body2{
+		left:19.4%;
+	}
+}
+@media (max-width: 1200px) {
+	.body1{
+		left:18.9%;
+	}
+	.body2{
+		left:18.9%;
+	}
+}
+@media (max-width: 1180px) {
+	.body1{
+		left:18.4%;
+	}
+	.body2{
+		left:18.4%;
+	}
+}
+@media (max-width: 1120px) {
+	.body1{
+		left:17%;
+	}
+	.body2{
+		left:17%;
+	}
+}
+@media (max-width: 1070px) {
+	.body1{
+		left:15%;
+	}
+	.body2{
+		left:15%;
+	}
+}
+@media (max-width: 1020px) {
+	.body1{
+		left:15%;
+	}
+	.body2{
+		left:15%;
+	}
+}
+@media (max-width: 1000px) {
+	.body1{
+		left:14.5%;
+	}
+	.body2{
+		left:14.5%;
+	}
+}
+
+@media (max-width: 970px) {
+	.body1{
+		left:14%;
+	}
+	.body2{
+		left:14%;
+	}
+}
+@media (max-width: 940px) {
+	.body1{
+		left:13.5%;
+	}
+	.body2{
+		left:13.5%;
+	}
+}
+@media (max-width: 910px) {
+	.body1{
+		left:13%;
+	}
+	.body2{
+		left:13%;
+	}
+}
+@media (max-width: 880px) {
+	.body1{
+		left:12.5%;
+	}
+	.body2{
+		left:12.5%;
+	}
+}
+@media (max-width: 850px) {
+	.body1{
+		left:12%;
+	}
+	.body2{
+		left:12%;
+	}
+}
+@media (max-width: 820px) {
+	.body1{
+		left:11.5%;
+	}
+	.body2{
+		left:11.5%;
+	}
+}
+@media (max-width: 790px) {
+	.body1{
+		left:11%;
+	}
+	.body2{
+		left:11%;
+	}
+}
+@media (max-width: 760px) {
+	.body1{
+		left:10.5%;
+	}
+	.body2{
+		left:10.5%;
+	}
+}
+@media (max-width: 730px) {
+	.body1{
+		left:10%;
+	}
+	.body2{
+		left:10%;
+	}
+}
+@media (max-width: 700px) {
+	.body1{
+		left:9.5%;
+	}
+	.body2{
+		left:9.5%;
+	}
+}
+@media (max-width: 670px) {
+	.body1{
+		left:9%;
+	}
+	.body2{
+		left:9%;
+	}
+}
+@media (max-width: 640px) {
+	.body1{
+		left:8.5%;
+	}
+	.body2{
+		left:8.5%;
+	}
+}
+@media (max-width: 610px) {
+	.body1{
+		left:8%;
+	}
+	.body2{
+		left:8%;
+	}
+}
+@media (max-width: 580px) {
+	.body1{
+		left:7.5%;
+	}
+	.body2{
+		left:7.5%;
+	}
+}
+@media (max-width: 550px) {
+	.body1{
+		left:7%;
+	}
+	.body2{
+		left:7%;
+	}
+}
+@media (max-width: 520px) {
+	.body1{
+		left:6.5%;
+	}
+	.body2{
+		left:6.5%;
+	}
+}
+@media (max-width: 490px) {
+	.body1{
+		left:6%;
+	}
+	.body2{
+		left:6%;
+	}
+}
+@media (max-width: 460px) {
+	.body1{
+		left:5.5%;
+	}
+	.body2{
+		left:5.5%;
+	}
+}
+@media (max-width: 430px) {
+	.body1{
+		left:5%;
+	}
+	.body2{
+		left:5%;
+	}
+}
+@media (max-width: 400px) {
+	.body1{
+		left:4.5%;
+	}
+	.body2{
+		left:4.5%;
+	}
+}
+@media (max-width: 370px) {
+	.body1{
+		left:4%;
+	}
+	.body2{
+		left:4%;
+	}
+}
+@media (max-width: 340px) {
+	.body1{
+		left:3.5%;
+	}
+	.body2{
+		left:3.5%;
+	}
+}
+@media (max-width: 310px) {
+	.body1{
+		left:3%;
+	}
+	.body2{
+		left:3%;
+	}
+}
+@media (max-width: 280px) {
+	.body1{
+		left:2.5%;
+	}
+	.body2{
+		left:2.5%;
+	}
+}
 
